@@ -181,7 +181,7 @@ function pauseClock(){stopTimer();game.paused=true;saveGame();renderGame()}
 function resumeClock(){teacherInspect=false;game.paused=false;if(game.phase==='question'||game.phase==='place')phaseTime(Math.max(1,secondsLeft));renderGame()}
 function chooseQuestion(){
  const round=Math.floor(game.turn/teamCount),slot=game.turn%teamCount,wanted=round<5?'dễ':round<10?'trung bình':'khó';
- const used=game.usedQuestions||[],inRound=used.slice(-slot),recent=used.slice(-Math.max(teamCount,6));
+ const used=game.usedQuestions||[],inRound=slot?used.slice(-slot):[],recent=used.slice(-Math.max(teamCount,6));
  const alreadyMatched=inRound.some(i=>game.bank[i]?.type==='match');
  const ranked=game.bank.map((q,i)=>{
   const count=used.filter(x=>x===i).length;
@@ -262,7 +262,7 @@ function normalizeQuestion(raw,number){
  const text=String(raw.cau_hoi??raw.question??raw.text??'').trim(),answerRaw=raw.dap_an??raw.answer??'',rawAnswer=String(answerRaw??'').trim();
  let type=norm(raw.loai??raw.type??'');const choices=['A','B','C','D'].map(k=>String(raw[k]??raw[k.toLowerCase()]??'').trim());
  if(!type)type=choices.every(Boolean)?'trac nghiem':(['dung','sai','true','false'].includes(norm(answerRaw))?'dung sai':'tra loi ngan');
- type=['mcq','trac nghiem','tracnghiem','abcd','choice'].includes(type)?'mcq':['tf','dung sai','dungsai','truefalse','dung sai co giai thich'].includes(type)?'tf':['text','tra loi ngan','traloingan','short'].includes(type)?'text':['matching','match','noi cot','noicot'].includes(type)?'match':['keyword','keywords','chon tu khoa','dien tu khoa','tu khoa','5 tu khoa'].includes(type)?'keyword':type;
+ type=['mcq','trac nghiem','tracnghiem','abcd','choice'].includes(type)?'mcq':['tf','dung sai','dungsai','truefalse','dung sai co giai thich','dung/sai','dung - sai'].includes(type)?'tf':['text','tra loi ngan','traloingan','short'].includes(type)?'text':['matching','match','noi cot','noicot'].includes(type)?'match':['keyword','keywords','chon tu khoa','dien tu khoa','tu khoa','5 tu khoa'].includes(type)?'keyword':type;
  if(!['mcq','tf','text','match','keyword'].includes(type))throw Error(`Dòng ${number}: dạng câu hỏi không hỗ trợ (${type}).`);
  if(!text||!rawAnswer)throw Error(`Dòng ${number}: thiếu nội dung hoặc đáp án.`);
  let answer=rawAnswer,left=[],right=[],keywords=[];
