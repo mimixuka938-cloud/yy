@@ -203,3 +203,81 @@
 .water-fish:not(.reel-active){animation:fish-arrive .55s cubic-bezier(.2,.7,.2,1) both}
 @keyframes fish-arrive{from{opacity:0;transform:translateY(18px) scale(.9)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){.water-fish:not(.reel-active){animation:none}}
+
+/* v29 cinematic lake stage — remove gauge, hide demo sidebar, reveal the scenery. */
+:root{--reef:#0a3349;--jade:#147a86;--amber:#ffda8e}
+.game-screen.demo-screen,.game-screen.demo-screen.scores-compact{display:block;padding:7px;min-height:520px;height:calc(100dvh - 65px)}
+.game-screen.demo-screen .game-stage{width:100%;height:100%;min-height:510px}
+.game-screen .game-stage{border-radius:17px;border:2px solid #efc779;box-shadow:0 7px 28px #0115229e;background-size:cover;background-position:center 53%}
+.game-stage:after{background:linear-gradient(180deg,#01283b6e 0%,transparent 19%,transparent 67%,#01293b97 100%)}
+.game-screen.demo-screen .scores,.game-screen.demo-screen .demo-sidebar{display:none}
+.game-screen.demo-screen .scene-top{justify-content:space-between}
+.scene-top .hud-pill{background:#0b3548c9;border:1px solid #ffdc8a8c;box-shadow:0 3px 12px #001e2c70;color:#fff4d6;border-radius:12px;padding:8px 14px;font-size:clamp(14px,1.15vw,19px)}
+.scene-top .hud-pill b{color:#ffe0a5}
+.scene-top .hud-pill:nth-child(2){background:#07525dd6}
+.scene-middle .fisherman{z-index:2}
+.game-screen.demo-screen .fisherman{left:clamp(9%,15vw,19%);bottom:12%;height:auto;width:clamp(155px,18vw,270px);max-height:65%;animation:none}
+.game-screen.demo-screen .water-fish{right:clamp(15%,20vw,27%);bottom:19%;width:clamp(180px,22vw,370px);max-height:37%;filter:drop-shadow(0 9px 13px #062739b3);animation:fish-gentle 2.8s ease-in-out infinite alternate}
+.game-screen.demo-screen .water-ring{right:clamp(16%,21vw,27%);bottom:18%;width:clamp(180px,21vw,350px);height:12%;border-color:#c2eaff88;opacity:.38;box-shadow:none;animation:water-pulse 2s ease-in-out infinite}
+.game-screen.demo-screen.is-casting .fisherman{animation:rod-cast .95s cubic-bezier(.15,.8,.3,1) both}
+.game-screen.demo-screen.is-landing .fisherman{animation:rod-lift .92s ease-in-out both}
+.game-screen.demo-screen .water-fish.catch-leap,.game-stage .water-fish.catch-leap{animation:fish-leap .95s cubic-bezier(.24,.45,.33,1) both}
+.game-stage .water-ring.landing-active{animation:water-splash .85s ease-out both}
+.game-stage .fisherman.landing{animation:rod-lift .92s ease-in-out both}
+.game-stage .fisherman.reel{animation:rod-ready 1.7s ease-in-out infinite alternate}
+@keyframes fish-gentle{from{transform:translateY(3px) rotate(-3deg)}to{transform:translateY(-15px) rotate(4deg)}}
+@keyframes rod-cast{0%{transform:translateY(2px) rotate(-10deg)}35%{transform:translateY(-9px) rotate(14deg)}100%{transform:translateY(0) rotate(0)}}
+@keyframes rod-ready{from{transform:rotate(-2deg)}to{transform:rotate(2deg) translateY(-3px)}}
+@keyframes rod-lift{0%{transform:rotate(0deg)}35%{transform:rotate(-11deg) translateY(-13px)}100%{transform:rotate(0deg)}}
+@keyframes fish-leap{0%{opacity:1;transform:translate(0,8px) rotate(-10deg) scale(.9)}50%{opacity:1;transform:translate(-80px,-135px) rotate(24deg) scale(1.12)}100%{opacity:.72;transform:translate(-140px,-155px) rotate(2deg) scale(1.05)}}
+@keyframes water-pulse{0%{transform:scale(.84);opacity:.45}100%{transform:scale(1.12);opacity:.1}}
+@keyframes water-splash{0%{transform:scale(.7);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+.game-screen.demo-screen .water-prompt{top:33%;right:9%;color:#fff1bd;text-shadow:0 4px 11px #001e36;font-size:clamp(27px,3.1vw,49px);letter-spacing:1px;transform:none}
+.game-stage .bite-hint,.game-stage .landing-hint{position:absolute;right:11%;top:33%;z-index:3;text-align:center;max-width:36%;background:#093c4cda;border:2px solid #f5da97;border-radius:18px;padding:13px 19px;color:#fff3c6;font-size:clamp(20px,2.05vw,31px);font-weight:950;letter-spacing:.4px;text-shadow:0 2px #153947;box-shadow:0 6px 18px #00243970;animation:hint-arrive .22s ease-out}
+.game-stage .bite-hint span{margin-right:4px}.game-stage .bite-hint small{display:block;font-size:clamp(12px,.95vw,16px);font-weight:600;color:#d3efed;letter-spacing:0;margin-top:3px}
+.game-stage .landing-hint{background:#0f614ff0;top:29%;right:14%;font-size:clamp(22px,2.1vw,35px)}
+@keyframes hint-arrive{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+.stage-bottom{bottom:18px;left:22px;right:23px;gap:16px;align-items:flex-end;justify-content:space-between}
+.stage-status{max-width:54%;background:#092c41d9;border:1px solid #f1d89480;box-shadow:0 3px 14px #011e3080;border-radius:13px;padding:10px 15px}
+.stage-status strong{color:#ffe4a7;font-size:clamp(20px,1.6vw,26px)}
+.stage-status small{color:#e1f7f7;font-size:clamp(12px,1vw,16px)}
+.stage-buttons{gap:11px;align-items:flex-end}
+.stage-buttons .art-btn{width:clamp(205px,16vw,285px)}
+.catch-action{display:flex;align-items:center;justify-content:center;gap:12px;min-width:clamp(200px,19vw,320px);max-width:390px;padding:14px 22px;min-height:72px;border:2px solid #fff3b7;border-radius:18px;background:linear-gradient(170deg,#ffe9a3,#edbb51);box-shadow:inset 0 2px 0 #fff,0 6px 0 #a25e1d,0 10px 22px #012a398b;color:#553616;font-size:clamp(22px,1.9vw,31px);font-weight:1000;line-height:1.05;transition:transform .15s ease,filter .15s ease}
+.catch-action .catch-action-icon{font-size:clamp(29px,2.6vw,42px);line-height:1}
+.catch-action small{display:block;font-size:clamp(11px,.85vw,15px);font-weight:750;color:#704e21;letter-spacing:.15px;padding-top:5px}
+.catch-action:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.catch-action:active{transform:translateY(3px);box-shadow:inset 0 2px 0 #fff,0 2px 0 #a25e1d}
+.catch-action:focus-visible{outline:4px solid #f9eaa8;outline-offset:4px}
+.reel-panel,.tension-track,.tension-pointer,.reel-progress,.reel-title,.demo-reel-label{display:none!important}
+.result-banner{position:absolute;inset:auto 19px 108px auto;z-index:11;display:block;width:min(450px,48%);height:auto;padding:0;background:transparent;backdrop-filter:none;pointer-events:none;animation:hint-arrive .24s ease-out}
+.result-banner .result-panel{width:100%;max-width:100%;max-height:min(62vh,510px);margin:0;padding:15px 19px 17px;border:2px solid #ffe09a;border-radius:18px;background:linear-gradient(160deg,#fff9e6,#f6e4bb);box-shadow:0 11px 32px #062334a1;pointer-events:auto}
+.result-banner .result-panel h2{font-size:clamp(21px,1.9vw,29px);margin:0 0 3px;color:#725019;text-shadow:none}
+.result-banner .result-panel p{font-size:clamp(13px,1vw,17px);line-height:1.35;margin:7px 0}
+.result-banner .result-fish{height:clamp(70px,13vh,118px);max-width:70%;filter:drop-shadow(0 7px 8px #0b38524e)}
+.result-banner .result-panel .game-btn{margin:6px 3px;padding:9px 15px;font-size:clamp(13px,1vw,17px)}
+.result-banner .result-score{font-size:26px}
+.result-banner .result-detail{font-size:13px;line-height:1.35;margin:7px auto;padding:8px}
+.game-screen.demo-screen .stage-status{min-width:min(310px,32vw)}
+.game-screen.demo-screen .result-banner{width:min(425px,45%)}
+.game-screen.demo-screen .result-panel .demo-caption{color:#5f7b7f;font-size:12px!important}
+.scene-crossfade{z-index:0;transition:opacity .4s ease-out}
+#fxPortal{top:84px;right:22px}#fxPortal .event-toast{background:#063b4be8;border-color:#f6d58f}
+.home .home-content{gap:14px;max-width:900px;border-color:#f5d38a75}
+.home .home-title{letter-spacing:-.025em}
+.home .home-buttons .art-btn{width:clamp(175px,15vw,265px)}
+.home .stat-pill{font-weight:700}
+.setup.setup-visual .game-only-field{display:none!important}
+.setup.setup-visual .setup-controls{grid-template-columns:minmax(200px,290px)}
+.setup.setup-visual .character-pick-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.setup.setup-visual .char-item{border-radius:15px}
+.setup.setup-visual .char-item img{height:clamp(95px,11.5vh,150px)}
+.setup.setup-visual .pane{background:linear-gradient(150deg,#073b56ee,#073145f0);border-radius:20px}
+.setup.setup-visual .page-sub{font-size:clamp(15px,1.2vw,19px);line-height:1.45}
+.setup.setup-visual .setup-footer{gap:14px;flex-wrap:wrap}
+.bank-page,.library,.help-screen,.end-screen{background-color:#092f42}
+.bank-card,.help-item,.pane{box-shadow:0 9px 24px #03182381}
+.help-grid{gap:13px}.help-item{border-radius:18px}
+@media(max-width:1100px){.game-screen.demo-screen,.game-screen.demo-screen.scores-compact{height:calc(100dvh - 60px);display:block}.game-screen.demo-screen .game-stage{min-height:530px}.game-screen.demo-screen .fisherman{left:8%;width:clamp(135px,17vw,220px)}.game-screen.demo-screen .water-fish{right:15%;width:27%}.stage-status{max-width:48%}.result-banner{width:min(385px,55%)}.catch-action{min-width:205px}}
+@media(max-width:720px){.game-screen.demo-screen,.game-screen.demo-screen.scores-compact{padding:4px;min-height:690px;height:calc(100dvh - 60px)}.game-screen.demo-screen .game-stage{min-height:680px}.scene-top{gap:6px}.scene-top .hud-pill{padding:6px 9px;font-size:12px}.scene-top .hud-pill:nth-child(3){display:none}.stage-bottom{bottom:9px;left:9px;right:9px;align-items:stretch;flex-direction:column}.stage-status{min-width:0!important;width:100%;max-width:100%;padding:8px 11px}.stage-status strong{font-size:17px}.stage-buttons{width:100%}.catch-action{width:100%;max-width:none;min-height:60px;padding:9px;font-size:21px}.catch-action small{font-size:11px}.game-screen.demo-screen .water-fish{right:9%;width:38%;bottom:26%}.game-screen.demo-screen .fisherman{left:4%;width:40%;max-height:51%;bottom:28%}.game-stage .bite-hint,.game-stage .landing-hint{top:24%;right:7%;max-width:75%;font-size:21px}.result-banner,.game-screen.demo-screen .result-banner{inset:auto 10px 125px 10px;width:auto}.result-banner .result-panel{padding:10px 12px;max-height:50vh}.result-banner .result-fish{height:75px}.setup.setup-visual .character-pick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.game-stage .water-fish.catch-leap,.game-stage .fisherman.landing,.game-screen.demo-screen .water-fish,.game-screen.demo-screen .water-ring,.game-stage .bite-hint,.game-stage .landing-hint{animation:none!important}.catch-action{transition:none!important}}
