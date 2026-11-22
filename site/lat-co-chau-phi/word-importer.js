@@ -56,7 +56,7 @@ window.WordQuizImporter=(()=>{
   if(!file?.name?.toLowerCase().endsWith('.docx'))throw Error('Chỉ hỗ trợ Word .docx (không phải .doc).');
   const buf=await file.arrayBuffer(),entry=zipEntries(buf),xml=await entry('word/document.xml');
   const elems=parseElements(xml),full=elems.flatMap(e=>e.kind==='p'?[e.text]:e.rows.flat()).join('\n');
-  return{elems,full,filename:file.name,kind:/ĐÁP\s*ÁN\s*GIÁO\s*VIÊN|ĐÁP\s*ÁN\s*DÙNG\s*ĐỂ/i.test(full)?'answer':'questions'}
+  return{elems,full,filename:file.name,kind:/^ĐÁP\s*ÁN\s*GIÁO\s*VIÊN/i.test(full.slice(0,160))?'answer':'questions'}
  }
  const norm=s=>String(s||'').normalize('NFC').trim();
  const noAccent=s=>norm(s).toLocaleLowerCase('vi').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
