@@ -24,6 +24,23 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Unpack African fishing game assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          GAME="docs/dai-chien-can-thu-chau-phi"
+          test -f "$GAME/assets-chunk-001.bin"
+          cat "$GAME"/assets-chunk-*.bin | tar -xz -C "$GAME"
+          rm "$GAME"/assets-chunk-*.bin
+          test -f "$GAME/index.html"
+          test -f "$GAME/app.js"
+          test -f "$GAME/style.css"
+          test -f "$GAME/assets/fish/F060.webp"
+          test -f "$GAME/assets/effects/E100.webp"
+          test -f "$GAME/assets/characters/C10.webp"
+          NUM=$(find "$GAME/assets" -type f -name '*.webp' | wc -l)
+          test "$NUM" -eq 213
+          echo "Full game extracted with $NUM WebP assets"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
