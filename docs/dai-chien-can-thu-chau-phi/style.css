@@ -76,3 +76,53 @@
 @media(max-width:1100px){.game-screen{grid-template-columns:minmax(0,1fr) 190px;height:calc(100dvh - 63px);gap:7px;padding:7px}.game-screen.scores-compact{grid-template-columns:minmax(0,1fr) 67px}.score-name{font-size:14px}.score-value{font-size:16px}.quiz-card{width:98%}.quiz-question{font-size:clamp(21px,2.3vw,30px)}.answer-option{font-size:clamp(18px,1.7vw,23px)}.hero-fish{opacity:.82}}
 @media(max-width:720px){.game-screen,.game-screen.scores-compact{height:auto;min-height:780px;grid-template-columns:1fr;grid-template-rows:minmax(530px,1fr) minmax(120px,auto)}.game-screen.scores-compact .scores{min-height:100px}.scores-compact .score-list{flex-direction:row;overflow-x:auto}.scores-compact .score-item{min-width:65px}.score-heading .score-title{font-size:16px;padding:8px}.score-toggle{min-height:40px}.quiz-art{width:154px;height:38px;flex-basis:154px;background-size:380px auto}.quiz-card{max-height:96%;padding:12px;border-width:3px}.quiz-question{font-size:20px;margin:12px 0}.answer-option{font-size:17px;min-height:52px;padding:9px 11px}.choices{gap:8px}.home-buttons{gap:8px}.art-btn{width:min(44vw,215px);min-height:45px}.home-title{font-size:clamp(30px,8vw,54px)}.water-fish{width:38%;bottom:23%}.reel-panel{width:92%;left:4%;right:4%;top:18%}}
 @media(prefers-reduced-motion:reduce){.water-fish.reel-active,.water-ring.reel-active,.fisherman.reel{animation:none!important}}
+
+/* v27a: visible game effects and teacher-managed question files. */
+#fxPortal{z-index:80;align-items:flex-start;justify-content:center;padding-top:clamp(85px,10vh,130px)}
+.fx-showcase{position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;min-width:250px;max-width:75vw;animation:fx-show .35s ease-out both}
+.fx-showcase .fx{width:clamp(125px,18vw,260px);height:clamp(125px,18vw,260px);object-fit:contain;filter:drop-shadow(0 0 16px #ffdc7a) drop-shadow(0 5px 14px #05223a);animation:fx-show .35s ease-out both}
+.fx-showcase .fx-label{display:block;margin-top:0;padding:12px 24px;border:3px solid #ffe79b;border-radius:24px;background:linear-gradient(125deg,#045e7a,#062e52);color:#fff4ba;font-size:clamp(24px,2.2vw,38px);text-align:center;box-shadow:0 0 28px #fbdd78a5,0 7px 19px #00192d;white-space:normal}
+.fx-showcase.fail .fx-label{border-color:#ffb3a2;background:linear-gradient(125deg,#7d3644,#173d5a);color:#fff0e5}
+.fx-radiance{position:absolute;top:20%;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,#fff5a8bd 0%,#31d8f861 43%,transparent 75%);animation:fx-radiate 1.15s ease-out infinite;z-index:-1}
+.fx-stars{position:absolute;inset:0;pointer-events:none}
+.fx-stars i{position:absolute;width:15px;height:15px;background:#fbe478;clip-path:polygon(50% 0,61% 37%,100% 50%,61% 63%,50% 100%,39% 63%,0 50%,39% 37%);animation:fx-stars 1.4s ease-in-out infinite}
+.fx-stars i:nth-child(1){top:15%;left:-15%}.fx-stars i:nth-child(2){top:30%;right:-12%;animation-delay:.15s}.fx-stars i:nth-child(3){top:60%;left:5%;animation-delay:.3s}.fx-stars i:nth-child(4){top:7%;right:12%;animation-delay:.45s}.fx-stars i:nth-child(5){top:72%;right:1%;animation-delay:.6s}.fx-stars i:nth-child(6){top:42%;left:0;animation-delay:.8s}
+@keyframes fx-show{from{opacity:0;transform:scale(.65) translateY(18px)}70%{opacity:1;transform:scale(1.08) translateY(-4px)}to{opacity:1;transform:scale(1)}}
+@keyframes fx-radiate{from{transform:scale(.5);opacity:0}50%{opacity:.85}to{transform:scale(1.45);opacity:0}}
+@keyframes fx-stars{0%,100%{transform:scale(.6) rotate(0);opacity:.4}50%{transform:scale(1.7) rotate(45deg);opacity:1}}
+.scene-ambient{position:absolute;inset:0;pointer-events:none;z-index:0}
+.scene-ambient i{position:absolute;display:block;width:13px;height:13px;border-radius:50%;background:#c7faffb8;box-shadow:0 0 22px #9aebff;animation:water-glimmer 3s ease-in-out infinite}
+.scene-ambient i:nth-child(1){top:51%;left:55%}.scene-ambient i:nth-child(2){top:68%;left:65%;animation-delay:.4s}.scene-ambient i:nth-child(3){top:79%;left:45%;animation-delay:1s}.scene-ambient i:nth-child(4){top:57%;left:87%;animation-delay:1.5s}.scene-ambient i:nth-child(5){top:84%;left:82%;animation-delay:2.1s}
+@keyframes water-glimmer{0%,100%{scale:.4;opacity:.15}50%{scale:1.2;opacity:.9}}
+.is-casting .fisherman{animation:cast-swing 1.15s cubic-bezier(.2,.7,.4,1) both;transform-origin:65% 85%}
+.is-casting .water-ring{animation:cast-splash 1.05s ease-out infinite}
+.is-casting .water-fish{animation:fish-struggle 1s ease-in-out infinite alternate}
+@keyframes cast-swing{0%{transform:rotate(-18deg) translateY(15px)}50%{transform:rotate(13deg) translateY(-6px)}100%{transform:rotate(0) translateY(0)}}
+@keyframes cast-splash{from{scale:.6;opacity:.9}to{scale:1.3;opacity:0}}
+.bank-page{min-height:calc(100dvh - 78px);padding:24px 26px 48px;overflow:auto;background:linear-gradient(#043551e3,#02283fe9),url('assets/backgrounds/BG01_savanna_day.webp') center/cover}
+.bank-container{max-width:1100px;margin:auto;display:grid;gap:17px}
+.bank-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.bank-header p{max-width:700px;color:#daf3fc;font-size:17px;line-height:1.5}
+.bank-summary{display:flex;align-items:center;gap:23px;border-radius:20px;border:2px solid #ffe09a;background:#073954eb;padding:14px 22px}
+.bank-highlight{display:flex;flex-direction:column;text-align:center;min-width:140px;border-right:1px solid #fff6bb66;padding-right:18px}
+.bank-highlight b{font-size:44px;color:#ffe28c;line-height:1.1}
+.bank-highlight span{font-weight:700;color:#dcf7ff;font-size:13px}
+.bank-summary p{margin:5px 0 0;color:#bff4f9}
+.bank-card{border:2px solid #f8d98d90;background:linear-gradient(135deg,#063b5af5,#052e47ed);border-radius:22px;padding:22px;box-shadow:0 10px 26px #001b3077}
+.bank-card h2{margin:0 0 8px;color:#ffe3a2;font-size:23px}
+.bank-card p{line-height:1.5;color:#e4f6fa;margin:5px 0 14px}
+.bank-file-label{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;min-height:80px;padding:18px;border:2px dashed #ffe39e;border-radius:16px;background:#116887b8;font-size:20px;font-weight:900;color:#fff7c7;cursor:pointer}
+.bank-file-label:hover{background:#177c9a}
+.bank-file-label input{max-width:100%;font-size:15px}
+.bank-note{font-size:14px!important;color:#b4e4f2!important}
+.bank-actions{display:flex;flex-wrap:wrap;gap:12px}
+.bank-actions .game-btn{white-space:normal;min-height:50px}
+.bank-status{padding:13px 15px;margin-top:12px;border:2px solid #9df0cd;border-radius:12px;background:#115b4c;color:#fff;font-weight:800}
+.bank-status.bank-error{background:#7b303f;border-color:#ffa3a3}
+@media(max-width:720px){.bank-page{min-height:calc(100dvh - 63px);padding:12px}.bank-card{padding:14px}.bank-summary{flex-wrap:wrap}.bank-highlight{min-width:100px}.bank-file-label{font-size:17px}#fxPortal{padding-top:110px}.fx-showcase .fx{height:125px;width:125px}.fx-showcase .fx-label{font-size:23px;padding:10px}}
+@media(prefers-reduced-motion:reduce){.fx-showcase,.fx-showcase .fx,.fx-radiance,.fx-stars i,.scene-ambient i,.is-casting .fisherman,.is-casting .water-ring,.is-casting .water-fish{animation:none!important}}
+
+/* Explicitly override the legacy ID-scoped effect sizing. */
+#fxPortal .fx-showcase .fx{width:clamp(130px,19vw,265px);height:clamp(130px,19vw,265px);object-fit:contain}
+#fxPortal .fx-showcase .fx-label{font-size:clamp(23px,2.2vw,38px);margin-top:0;text-shadow:1px 3px #064566,0 4px 12px #031e39}
+@media(max-width:720px){#fxPortal .fx-showcase .fx{width:130px;height:130px}#fxPortal .fx-showcase .fx-label{font-size:22px}}
