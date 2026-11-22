@@ -19,3 +19,60 @@
 .team-row{flex-wrap:wrap}.team-row input{flex-basis:25%;flex-grow:1}.team-row .nick-input{flex-basis:32%;min-width:145px}.team-row select{flex-basis:100px}.team-row .team-number{align-self:center}
 /* Tận dụng chiếc thuyền có thật trong nền 2.5D, không phủ hình chữ nhật giả lên cảnh. */
 .boat-shape{display:none}.fisherman{left:16%;bottom:13%}.boat-flag{left:31%;bottom:23%}
+
+/* v26: classroom-first, 16:9 presentation, coherent 2.5D visual system. */
+:root{--panel-gold:#ffdb85;--panel-ink:#123b53}
+.game-screen{grid-template-columns:minmax(0,1fr) clamp(210px,15vw,280px);gap:8px;padding:8px;height:calc(100dvh - 78px);min-height:560px}
+.game-screen.scores-compact{grid-template-columns:minmax(0,1fr) 78px}
+.game-stage{border-radius:22px;border:2px solid #f7d98f}
+.score-heading{display:flex;align-items:stretch;gap:1px;background:#063a59;border-bottom:1px solid #fff5bb6d}
+.score-heading .score-title{flex:1;border:0;padding:13px 6px 11px;font-size:clamp(16px,1.15vw,22px)}
+.score-toggle{border:0;border-left:1px solid #fff4a35a;color:#fff6c7;font-size:24px;font-weight:900;background:#105a78;min-width:36px;cursor:pointer}
+.score-toggle:hover,.score-toggle:focus-visible{background:#157c94;outline:2px solid #ffdf7c;outline-offset:-3px}
+.score-item{padding:9px 7px;gap:6px}
+.score-name{font-size:clamp(15px,1.05vw,19px)}
+.score-value{font-size:clamp(16px,1.3vw,22px)}
+.scores-compact .score-heading{justify-content:center}
+.scores-compact .score-title,.scores-compact .score-help,.scores-compact .scores>.game-btn{display:none}
+.scores-compact .score-toggle{width:100%;height:48px;border:0}
+.scores-compact .score-list{padding:5px;gap:8px}
+.scores-compact .score-item{flex-direction:column;justify-content:center;gap:5px;padding:8px 1px}
+.scores-compact .score-item img,.scores-compact .score-item .score-name{display:none}
+.scores-compact .score-value{font-size:16px}
+.scores-compact .rank{width:30px;height:30px;font-size:15px}
+.game-btn{border-radius:16px}
+.game-btn:focus-visible,.art-btn:focus-visible{outline:4px solid #fff9ca;outline-offset:4px}
+.art-btn{border:0;background:transparent;padding:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:clamp(170px,17.5vw,275px);min-height:62px;filter:drop-shadow(0 5px 3px #05263fbb);transition:transform .16s ease,filter .16s ease;flex-shrink:0}
+.art-btn img{display:block;width:100%;height:auto;object-fit:contain}
+.art-btn:hover{transform:translateY(-3px) scale(1.02);filter:brightness(1.1) drop-shadow(0 7px 5px #011e38b0)}
+.art-btn:active{transform:translateY(2px) scale(.98)}
+.home-content{gap:15px}
+.home-buttons{align-items:center;max-width:920px}
+.home-title{font-size:clamp(35px,5vw,88px);line-height:1.05}
+.hero-char{max-height:41%;height:clamp(175px,36vh,380px)}
+.hero-fish{max-height:32%;width:clamp(110px,15vw,280px)}
+.quiz-card{width:min(97%,1260px);max-height:96%;padding:clamp(16px,1.8vw,30px);border-radius:25px;border:4px solid #ffc45e;background:linear-gradient(160deg,#fffdf0,#f9e9b9 95%);box-shadow:0 20px 70px #001627e6}
+.quiz-heading{justify-content:flex-start;flex-wrap:wrap;gap:10px}
+.quiz-art{width:224px;height:53px;flex:0 0 224px;background-repeat:no-repeat;background-size:530px auto;background-position:center top;border-radius:12px}
+.quiz-badge{font-size:clamp(13px,1.05vw,17px);padding:10px 14px;margin-right:auto}
+.quiz-timer{font-size:clamp(19px,1.7vw,28px)}
+.quiz-question{font-size:clamp(23px,2.15vw,36px);line-height:1.4;margin:17px 0 21px;color:#133e56}
+.answer-option{font-size:clamp(19px,1.5vw,25px);min-height:68px;line-height:1.3;padding:14px 17px;border-width:2px}
+.choice-letter{width:36px;height:36px;font-size:19px;border-radius:11px}
+.choices{gap:14px}
+.tf-options button{font-size:clamp(21px,2.2vw,31px);min-height:84px}
+.quiz-note{font-size:13px}
+.quiz-category{font-size:clamp(15px,1.1vw,19px)}
+.word-choice,.match-item{font-size:clamp(18px,1.35vw,23px);min-height:58px}
+.reel-panel{width:min(63%,545px);right:4%;top:19%;padding:clamp(18px,2vw,32px);background:#073954f2;border:3px solid #ffdf86}
+.reel-title{font-size:clamp(22px,2vw,32px)}
+.water-fish{bottom:20%;max-height:48%;width:min(33%,410px)}
+.water-fish.reel-active{animation:fish-struggle 1.3s ease-in-out infinite alternate;transform-origin:60% 55%}
+.water-ring.reel-active{animation:ring-splash .8s ease-out infinite}
+.fisherman.reel{animation:reel-rock .44s ease-in-out infinite alternate;transform-origin:bottom center}
+@keyframes fish-struggle{from{translate:0 13px;rotate:-8deg;scale:.92}to{translate:-24px -28px;rotate:13deg;scale:1.07}}
+@keyframes ring-splash{0%{opacity:.8;scale:.72}100%{opacity:.05;scale:1.22}}
+@keyframes reel-rock{from{transform:rotate(-4deg) translateY(2px)}to{transform:rotate(5deg) translateY(-8px)}}
+@media(max-width:1100px){.game-screen{grid-template-columns:minmax(0,1fr) 190px;height:calc(100dvh - 63px);gap:7px;padding:7px}.game-screen.scores-compact{grid-template-columns:minmax(0,1fr) 67px}.score-name{font-size:14px}.score-value{font-size:16px}.quiz-card{width:98%}.quiz-question{font-size:clamp(21px,2.3vw,30px)}.answer-option{font-size:clamp(18px,1.7vw,23px)}.hero-fish{opacity:.82}}
+@media(max-width:720px){.game-screen,.game-screen.scores-compact{height:auto;min-height:780px;grid-template-columns:1fr;grid-template-rows:minmax(530px,1fr) minmax(120px,auto)}.game-screen.scores-compact .scores{min-height:100px}.scores-compact .score-list{flex-direction:row;overflow-x:auto}.scores-compact .score-item{min-width:65px}.score-heading .score-title{font-size:16px;padding:8px}.score-toggle{min-height:40px}.quiz-art{width:154px;height:38px;flex-basis:154px;background-size:380px auto}.quiz-card{max-height:96%;padding:12px;border-width:3px}.quiz-question{font-size:20px;margin:12px 0}.answer-option{font-size:17px;min-height:52px;padding:9px 11px}.choices{gap:8px}.home-buttons{gap:8px}.art-btn{width:min(44vw,215px);min-height:45px}.home-title{font-size:clamp(30px,8vw,54px)}.water-fish{width:38%;bottom:23%}.reel-panel{width:92%;left:4%;right:4%;top:18%}}
+@media(prefers-reduced-motion:reduce){.water-fish.reel-active,.water-ring.reel-active,.fisherman.reel{animation:none!important}}
