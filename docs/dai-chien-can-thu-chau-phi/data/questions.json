@@ -1,0 +1,1117 @@
+{
+  "note": "Ngân hàng 80 câu do trợ lý biên soạn, cần giáo viên đối chiếu SGK đang dạy trước khi sử dụng chính thức.",
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Hoang mạc Sahara nằm chủ yếu ở khu vực nào của châu Phi?",
+      "options": [
+        "Bắc Phi",
+        "Tây Phi ven biển",
+        "Nam Phi",
+        "Đảo Madagascar"
+      ],
+      "answer": 0,
+      "explanation": "Sahara trải rộng ở Bắc Phi."
+    },
+    {
+      "id": "Q002",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Sông nào thường được nhắc đến như dòng sông dài nhất châu Phi?",
+      "options": [
+        "Sông Congo",
+        "Sông Nile",
+        "Sông Niger",
+        "Sông Zambezi"
+      ],
+      "answer": 1,
+      "explanation": "Sông Nile là dòng sông dài nhất châu Phi."
+    },
+    {
+      "id": "Q003",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Hồ Victoria thuộc khu vực nào của châu Phi?",
+      "options": [
+        "Bắc Phi",
+        "Tây Phi",
+        "Đông Phi",
+        "Nam Phi"
+      ],
+      "answer": 2,
+      "explanation": "Hồ Victoria nằm ở Đông Phi."
+    },
+    {
+      "id": "Q004",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Rừng mưa nhiệt đới tập trung nhiều ở khu vực nào?",
+      "options": [
+        "Ven Sahara",
+        "Lưu vực Congo",
+        "Phía tây Namib",
+        "Cực nam châu Phi"
+      ],
+      "answer": 1,
+      "explanation": "Lưu vực Congo có diện tích rừng mưa nhiệt đới rộng lớn."
+    },
+    {
+      "id": "Q005",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Kiểu thực vật đặc trưng của xa van là gì?",
+      "options": [
+        "Rêu và địa y",
+        "Cây lá kim",
+        "Cỏ cao, cây gỗ thưa",
+        "Chỉ có xương rồng"
+      ],
+      "answer": 2,
+      "explanation": "Xa van nổi bật với đồng cỏ và cây gỗ mọc thưa."
+    },
+    {
+      "id": "Q006",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Hoang mạc nào trải rộng ở phía nam châu Phi?",
+      "options": [
+        "Kalahari",
+        "Gobi",
+        "Atacama",
+        "Sahara"
+      ],
+      "answer": 0,
+      "explanation": "Kalahari nằm tại miền nam châu Phi."
+    },
+    {
+      "id": "Q007",
+      "type": "mc",
+      "difficulty": "trung bình",
+      "question": "Hoang mạc Namib nằm gần vùng biển nào?",
+      "options": [
+        "Biển Đỏ",
+        "Đại Tây Dương",
+        "Biển Đen",
+        "Địa Trung Hải"
+      ],
+      "answer": 1,
+      "explanation": "Namib nằm ven bờ Đại Tây Dương ở tây nam châu Phi."
+    },
+    {
+      "id": "Q008",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Đường nào đi qua gần phần giữa châu Phi?",
+      "options": [
+        "Vòng cực Bắc",
+        "Chí tuyến Bắc",
+        "Xích đạo",
+        "Kinh tuyến 180°"
+      ],
+      "answer": 2,
+      "explanation": "Đường Xích đạo đi qua phần giữa châu Phi."
+    },
+    {
+      "id": "Q009",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Sông Congo chủ yếu thuộc lưu vực nào?",
+      "options": [
+        "Trung Phi",
+        "Bắc Phi",
+        "Nam Á",
+        "Tây Âu"
+      ],
+      "answer": 0,
+      "explanation": "Lưu vực sông Congo thuộc khu vực Trung Phi."
+    },
+    {
+      "id": "Q010",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Địa hình nào chiếm phần lớn diện tích châu Phi?",
+      "options": [
+        "Đồng bằng thấp",
+        "Sơn nguyên",
+        "Băng nguyên",
+        "Núi trẻ rất cao"
+      ],
+      "answer": 1,
+      "explanation": "Châu Phi thường được gọi là lục địa cao nguyên/sơn nguyên."
+    },
+    {
+      "id": "Q011",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Vùng tự nhiên thường có khí hậu khô hạn và thực vật thưa thớt là gì?",
+      "options": [
+        "Rừng mưa",
+        "Đầm lầy",
+        "Hoang mạc",
+        "Rừng ngập mặn"
+      ],
+      "answer": 2,
+      "explanation": "Hoang mạc có lượng mưa rất thấp và thảm thực vật thưa."
+    },
+    {
+      "id": "Q012",
+      "type": "mc",
+      "difficulty": "trung bình",
+      "question": "Thác Victoria nằm trên con sông nào?",
+      "options": [
+        "Sông Niger",
+        "Sông Nile",
+        "Sông Zambezi",
+        "Sông Congo"
+      ],
+      "answer": 2,
+      "explanation": "Thác Victoria nằm trên sông Zambezi."
+    },
+    {
+      "id": "Q013",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Đảo lớn nằm ngoài khơi phía đông nam châu Phi là đảo nào?",
+      "options": [
+        "Iceland",
+        "Madagascar",
+        "Borneo",
+        "Cuba"
+      ],
+      "answer": 1,
+      "explanation": "Madagascar là đảo lớn ở ngoài khơi đông nam châu Phi."
+    },
+    {
+      "id": "Q014",
+      "type": "mc",
+      "difficulty": "trung bình",
+      "question": "Dãy núi Atlas nằm chủ yếu ở khu vực nào của châu Phi?",
+      "options": [
+        "Tây Bắc Phi",
+        "Đông Nam Phi",
+        "Trung Phi",
+        "Đảo Madagascar"
+      ],
+      "answer": 0,
+      "explanation": "Dãy Atlas nằm ở khu vực tây bắc châu Phi."
+    },
+    {
+      "id": "Q015",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Môi trường nào có mưa nhiều quanh năm và rừng rậm xanh tốt?",
+      "options": [
+        "Hoang mạc",
+        "Xích đạo ẩm",
+        "Cận cực",
+        "Núi băng"
+      ],
+      "answer": 1,
+      "explanation": "Môi trường xích đạo ẩm có nhiệt và lượng mưa lớn."
+    },
+    {
+      "id": "Q016",
+      "type": "mc",
+      "difficulty": "vận dụng",
+      "question": "Nguyên nhân tự nhiên chủ yếu làm Sahara rất khô hạn là gì?",
+      "options": [
+        "Gió mang nhiều hơi nước quanh năm",
+        "Vị trí chịu áp cao chí tuyến",
+        "Băng tuyết bao phủ",
+        "Mưa dông liên tục"
+      ],
+      "answer": 1,
+      "explanation": "Vành đai áp cao chí tuyến làm khí không khí đi xuống, khó hình thành mưa."
+    },
+    {
+      "id": "Q017",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Biển nào nằm giữa châu Phi và bán đảo Ả Rập?",
+      "options": [
+        "Biển Đỏ",
+        "Biển Baltic",
+        "Biển Nhật Bản",
+        "Biển Caspi"
+      ],
+      "answer": 0,
+      "explanation": "Biển Đỏ ngăn cách đông bắc Phi và bán đảo Ả Rập."
+    },
+    {
+      "id": "Q018",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Đại dương nào nằm phía tây châu Phi?",
+      "options": [
+        "Ấn Độ Dương",
+        "Bắc Băng Dương",
+        "Thái Bình Dương",
+        "Đại Tây Dương"
+      ],
+      "answer": 3,
+      "explanation": "Phía tây châu Phi giáp Đại Tây Dương."
+    },
+    {
+      "id": "Q019",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Đại dương nào nằm phía đông châu Phi?",
+      "options": [
+        "Ấn Độ Dương",
+        "Đại Tây Dương",
+        "Thái Bình Dương",
+        "Bắc Băng Dương"
+      ],
+      "answer": 0,
+      "explanation": "Phía đông châu Phi giáp Ấn Độ Dương."
+    },
+    {
+      "id": "Q020",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Điều gì giúp bảo vệ các loài động vật hoang dã ở xa van?",
+      "options": [
+        "Phá hủy nơi sống",
+        "Săn bắt tùy ý",
+        "Lập khu bảo tồn",
+        "Đốt rừng liên tục"
+      ],
+      "answer": 2,
+      "explanation": "Khu bảo tồn góp phần bảo vệ nơi sống và đa dạng sinh học."
+    },
+    {
+      "id": "Q021",
+      "type": "mc",
+      "difficulty": "trung bình",
+      "question": "Hồ Tanganyika nổi tiếng vì đặc điểm nào sau đây?",
+      "options": [
+        "Là hồ nước mặn ở sa mạc",
+        "Là hồ nước ngọt rất sâu",
+        "Nằm giữa châu Âu",
+        "Đóng băng quanh năm"
+      ],
+      "answer": 1,
+      "explanation": "Tanganyika là một trong những hồ nước ngọt sâu nhất thế giới."
+    },
+    {
+      "id": "Q022",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Khu vực đồng bằng Congo có hệ sinh thái nổi bật nào?",
+      "options": [
+        "Rừng mưa nhiệt đới",
+        "Lãnh nguyên",
+        "Sa mạc lạnh",
+        "Rừng lá kim phương bắc"
+      ],
+      "answer": 0,
+      "explanation": "Vùng Congo có rừng mưa nhiệt đới phát triển."
+    },
+    {
+      "id": "Q023",
+      "type": "mc",
+      "difficulty": "dễ",
+      "question": "Động vật nào thường được gắn với hệ sinh thái xa van châu Phi?",
+      "options": [
+        "Gấu trắng",
+        "Sư tử",
+        "Tuần lộc",
+        "Chim cánh cụt hoàng đế"
+      ],
+      "answer": 1,
+      "explanation": "Sư tử là loài điển hình tại các vùng xa van châu Phi."
+    },
+    {
+      "id": "Q024",
+      "type": "mc",
+      "difficulty": "trung bình",
+      "question": "Về phía đông bắc, châu Phi tiếp giáp với châu Á qua khu vực nào?",
+      "options": [
+        "Eo đất Suez",
+        "Eo đất Panama",
+        "Eo biển Bering",
+        "Eo đất Kra"
+      ],
+      "answer": 0,
+      "explanation": "Eo đất Suez nối châu Phi và châu Á."
+    },
+    {
+      "id": "Q025",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Châu Phi có đường Xích đạo đi qua.",
+      "answer": true,
+      "explanation": "Xích đạo chạy ngang phần giữa châu Phi."
+    },
+    {
+      "id": "Q026",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Sahara là khu vực rừng mưa có mưa nhiều quanh năm.",
+      "answer": false,
+      "explanation": "Sahara là hoang mạc rất khô hạn."
+    },
+    {
+      "id": "Q027",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Sông Nile gắn liền với nền văn minh Ai Cập cổ đại.",
+      "answer": true,
+      "explanation": "Dòng Nile có vai trò lớn với cư dân Ai Cập cổ đại."
+    },
+    {
+      "id": "Q028",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Hồ Victoria chỉ nằm trong một quốc gia duy nhất.",
+      "answer": false,
+      "explanation": "Hồ Victoria tiếp giáp Uganda, Kenya và Tanzania."
+    },
+    {
+      "id": "Q029",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Rừng mưa lưu vực Congo có độ ẩm cao.",
+      "answer": true,
+      "explanation": "Khu vực xích đạo ẩm nhận nhiều mưa."
+    },
+    {
+      "id": "Q030",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Xa van chỉ toàn cát, hầu như không có cây cỏ.",
+      "answer": false,
+      "explanation": "Xa van là đồng cỏ với cây gỗ mọc thưa."
+    },
+    {
+      "id": "Q031",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Thác Victoria nằm trên sông Zambezi.",
+      "answer": true,
+      "explanation": "Thác thuộc hệ thống sông Zambezi."
+    },
+    {
+      "id": "Q032",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Đại Tây Dương nằm phía đông châu Phi.",
+      "answer": false,
+      "explanation": "Đại Tây Dương nằm phía tây châu Phi."
+    },
+    {
+      "id": "Q033",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Hoang mạc Namib nằm ở tây nam châu Phi.",
+      "answer": true,
+      "explanation": "Namib ven Đại Tây Dương tại phía tây nam châu Phi."
+    },
+    {
+      "id": "Q034",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Madagascar là một bán đảo nối liền châu Phi.",
+      "answer": false,
+      "explanation": "Madagascar là một đảo lớn, tách khỏi lục địa."
+    },
+    {
+      "id": "Q035",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Kalahari nằm ở miền nam châu Phi.",
+      "answer": true,
+      "explanation": "Kalahari trải rộng ở vùng nam Phi."
+    },
+    {
+      "id": "Q036",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Mọi khu vực châu Phi đều có khí hậu giống hệt nhau.",
+      "answer": false,
+      "explanation": "Châu Phi có môi trường xích đạo, nhiệt đới, hoang mạc và cận nhiệt khác nhau."
+    },
+    {
+      "id": "Q037",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Dãy Atlas nằm ở tây bắc châu Phi.",
+      "answer": true,
+      "explanation": "Atlas thuộc khu vực tây bắc Phi."
+    },
+    {
+      "id": "Q038",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Khi khai thác tài nguyên thiên nhiên, cần chú ý bảo vệ môi trường.",
+      "answer": true,
+      "explanation": "Sử dụng bền vững giúp bảo tồn tài nguyên và sinh cảnh."
+    },
+    {
+      "id": "Q039",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Hồ Tanganyika nằm ở Bắc Băng Dương.",
+      "answer": false,
+      "explanation": "Tanganyika là hồ nước ngọt ở khu vực Đông Phi."
+    },
+    {
+      "id": "Q040",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Phía đông châu Phi tiếp giáp Ấn Độ Dương.",
+      "answer": true,
+      "explanation": "Ấn Độ Dương nằm phía đông lục địa."
+    },
+    {
+      "id": "Q041",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Môi trường hoang mạc thường có lượng mưa lớn quanh năm.",
+      "answer": false,
+      "explanation": "Khí hậu hoang mạc rất khô hạn."
+    },
+    {
+      "id": "Q042",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Động vật hoang dã cần nơi cư trú được bảo vệ.",
+      "answer": true,
+      "explanation": "Bảo vệ sinh cảnh là một phần quan trọng của bảo tồn thiên nhiên."
+    },
+    {
+      "id": "Q043",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Sông Congo chảy qua khu vực Trung Phi.",
+      "answer": true,
+      "explanation": "Lưu vực Congo nằm ở vùng Trung Phi."
+    },
+    {
+      "id": "Q044",
+      "type": "tf",
+      "difficulty": "dễ",
+      "question": "Có thể dùng bản đồ để xác định vị trí các sông, hồ ở châu Phi.",
+      "answer": true,
+      "explanation": "Bản đồ là công cụ địa lí giúp xác định vị trí đối tượng."
+    },
+    {
+      "id": "Q045",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Hoang mạc ________ nằm ở Bắc Phi.",
+      "answer": "Sahara",
+      "options": [
+        "Sahara",
+        "Kalahari",
+        "Namib",
+        "Gobi"
+      ],
+      "explanation": "Sahara là hoang mạc lớn ở Bắc Phi."
+    },
+    {
+      "id": "Q046",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Sông ________ chảy qua Ai Cập.",
+      "answer": "Nile",
+      "options": [
+        "Nile",
+        "Congo",
+        "Niger",
+        "Zambezi"
+      ],
+      "explanation": "Sông Nile chảy qua lãnh thổ Ai Cập."
+    },
+    {
+      "id": "Q047",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Lưu vực sông ________ có rừng mưa nhiệt đới rộng lớn.",
+      "answer": "Congo",
+      "options": [
+        "Congo",
+        "Nile",
+        "Volga",
+        "Mekong"
+      ],
+      "explanation": "Lưu vực Congo thuộc vùng rừng xích đạo."
+    },
+    {
+      "id": "Q048",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Hồ ________ nằm ở khu vực Đông Phi.",
+      "answer": "Victoria",
+      "options": [
+        "Victoria",
+        "Chad",
+        "Baikal",
+        "Superior"
+      ],
+      "explanation": "Victoria là hồ lớn nằm tại Đông Phi."
+    },
+    {
+      "id": "Q049",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Phía tây châu Phi giáp Đại Tây ________.",
+      "answer": "Dương",
+      "options": [
+        "Dương",
+        "Bình",
+        "Hồ",
+        "Bắc"
+      ],
+      "explanation": "Đại Tây Dương nằm phía tây châu Phi."
+    },
+    {
+      "id": "Q050",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Phía đông châu Phi giáp ________ Độ Dương.",
+      "answer": "Ấn",
+      "options": [
+        "Ấn",
+        "Đại",
+        "Thái",
+        "Bắc"
+      ],
+      "explanation": "Phía đông châu Phi giáp Ấn Độ Dương."
+    },
+    {
+      "id": "Q051",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Đường ________ đi qua phần giữa châu Phi.",
+      "answer": "Xích đạo",
+      "options": [
+        "Xích đạo",
+        "Chí tuyến Bắc",
+        "Vòng cực Bắc",
+        "Kinh tuyến gốc"
+      ],
+      "explanation": "Đường Xích đạo đi qua châu Phi."
+    },
+    {
+      "id": "Q052",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Thác Victoria nằm trên sông ________.",
+      "answer": "Zambezi",
+      "options": [
+        "Zambezi",
+        "Nile",
+        "Congo",
+        "Senegal"
+      ],
+      "explanation": "Thác Victoria gắn với sông Zambezi."
+    },
+    {
+      "id": "Q053",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Đảo lớn ngoài khơi đông nam châu Phi là ________.",
+      "answer": "Madagascar",
+      "options": [
+        "Madagascar",
+        "Greenland",
+        "Sumatra",
+        "Iceland"
+      ],
+      "explanation": "Madagascar nằm ở ngoài khơi đông nam Phi."
+    },
+    {
+      "id": "Q054",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Hoang mạc ________ nằm ở miền nam châu Phi.",
+      "answer": "Kalahari",
+      "options": [
+        "Kalahari",
+        "Sahara",
+        "Gobi",
+        "Taklamakan"
+      ],
+      "explanation": "Kalahari nằm ở nam Phi."
+    },
+    {
+      "id": "Q055",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Môi trường ________ ẩm thường có rừng rậm xanh tốt.",
+      "answer": "xích đạo",
+      "options": [
+        "xích đạo",
+        "hoang mạc",
+        "cận cực",
+        "núi băng"
+      ],
+      "explanation": "Môi trường xích đạo ẩm có mưa nhiều."
+    },
+    {
+      "id": "Q056",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Thảm thực vật chủ yếu của xa van là đồng ________.",
+      "answer": "cỏ",
+      "options": [
+        "cỏ",
+        "tuyết",
+        "băng",
+        "rêu"
+      ],
+      "explanation": "Xa van có đồng cỏ và cây gỗ thưa."
+    },
+    {
+      "id": "Q057",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Dãy núi ________ ở tây bắc châu Phi.",
+      "answer": "Atlas",
+      "options": [
+        "Atlas",
+        "Andes",
+        "Alps",
+        "Himalaya"
+      ],
+      "explanation": "Dãy Atlas nằm ở tây bắc Phi."
+    },
+    {
+      "id": "Q058",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Biển ________ ngăn cách đông bắc Phi với bán đảo Ả Rập.",
+      "answer": "Đỏ",
+      "options": [
+        "Đỏ",
+        "Đen",
+        "Caspian",
+        "Baltic"
+      ],
+      "explanation": "Biển Đỏ ở phía đông bắc châu Phi."
+    },
+    {
+      "id": "Q059",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Hồ ________ là một trong những hồ nước ngọt sâu nhất thế giới.",
+      "answer": "Tanganyika",
+      "options": [
+        "Tanganyika",
+        "Victoria",
+        "Chad",
+        "Nasser"
+      ],
+      "explanation": "Tanganyika nổi tiếng có độ sâu rất lớn."
+    },
+    {
+      "id": "Q060",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Sư tử thường sinh sống trong môi trường ________ châu Phi.",
+      "answer": "xa van",
+      "options": [
+        "xa van",
+        "băng tuyết",
+        "đài nguyên",
+        "rừng lá kim"
+      ],
+      "explanation": "Xa van là môi trường của nhiều động vật hoang dã châu Phi."
+    },
+    {
+      "id": "Q061",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Cần lập các khu ________ để bảo vệ động vật hoang dã.",
+      "answer": "bảo tồn",
+      "options": [
+        "bảo tồn",
+        "khai thác",
+        "đô thị",
+        "công nghiệp"
+      ],
+      "explanation": "Khu bảo tồn giúp gìn giữ sinh cảnh và loài."
+    },
+    {
+      "id": "Q062",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Hoang mạc Namib nằm ven Đại Tây ________.",
+      "answer": "Dương",
+      "options": [
+        "Dương",
+        "Độ",
+        "Bình",
+        "Hồ"
+      ],
+      "explanation": "Namib nằm ở phía tây nam châu Phi."
+    },
+    {
+      "id": "Q063",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Địa hình ________ chiếm phần lớn diện tích châu Phi.",
+      "answer": "sơn nguyên",
+      "options": [
+        "sơn nguyên",
+        "băng nguyên",
+        "đồng bằng thấp",
+        "vịnh biển"
+      ],
+      "explanation": "Châu Phi có nhiều khu vực sơn nguyên."
+    },
+    {
+      "id": "Q064",
+      "type": "fill",
+      "difficulty": "trung bình",
+      "question": "Bản đồ giúp xác định ________ địa lí của sông, hồ, hoang mạc.",
+      "answer": "vị trí",
+      "options": [
+        "vị trí",
+        "trọng lượng",
+        "âm thanh",
+        "độ tuổi"
+      ],
+      "explanation": "Bản đồ thể hiện vị trí và sự phân bố đối tượng địa lí."
+    },
+    {
+      "id": "Q065",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép sông với thông tin phù hợp.",
+      "pairs": [
+        [
+          "Sông Nile",
+          "Chảy qua Ai Cập"
+        ],
+        [
+          "Sông Congo",
+          "Lưu vực Trung Phi"
+        ],
+        [
+          "Sông Zambezi",
+          "Có thác Victoria"
+        ]
+      ],
+      "explanation": "Các con sông lớn nằm ở những khu vực khác nhau của châu Phi."
+    },
+    {
+      "id": "Q066",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối hoang mạc với khu vực.",
+      "pairs": [
+        [
+          "Sahara",
+          "Bắc Phi"
+        ],
+        [
+          "Kalahari",
+          "Nam Phi"
+        ],
+        [
+          "Namib",
+          "Tây nam Phi, ven Đại Tây Dương"
+        ]
+      ],
+      "explanation": "Sahara, Kalahari và Namib có vị trí khác nhau."
+    },
+    {
+      "id": "Q067",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép đối tượng địa lí với loại địa hình.",
+      "pairs": [
+        [
+          "Victoria",
+          "Hồ"
+        ],
+        [
+          "Atlas",
+          "Dãy núi"
+        ],
+        [
+          "Madagascar",
+          "Đảo"
+        ]
+      ],
+      "explanation": "Ba địa danh thuộc ba nhóm địa hình khác nhau."
+    },
+    {
+      "id": "Q068",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối môi trường tự nhiên với thảm thực vật.",
+      "pairs": [
+        [
+          "Xích đạo ẩm",
+          "Rừng rậm xanh quanh năm"
+        ],
+        [
+          "Xa van",
+          "Đồng cỏ, cây gỗ thưa"
+        ],
+        [
+          "Hoang mạc",
+          "Cây bụi chịu hạn, thưa thớt"
+        ]
+      ],
+      "explanation": "Điều kiện khí hậu ảnh hưởng rõ đến thảm thực vật."
+    },
+    {
+      "id": "Q069",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối địa danh với vị trí tương đối.",
+      "pairs": [
+        [
+          "Hồ Victoria",
+          "Đông Phi"
+        ],
+        [
+          "Lưu vực Congo",
+          "Trung Phi"
+        ],
+        [
+          "Dãy Atlas",
+          "Tây bắc Phi"
+        ]
+      ],
+      "explanation": "Xác định các địa danh lớn trên lược đồ."
+    },
+    {
+      "id": "Q070",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép tự nhiên với hoạt động bảo vệ phù hợp.",
+      "pairs": [
+        [
+          "Động vật hoang dã",
+          "Lập khu bảo tồn"
+        ],
+        [
+          "Rừng nhiệt đới",
+          "Hạn chế phá rừng"
+        ],
+        [
+          "Nguồn nước",
+          "Tránh gây ô nhiễm"
+        ]
+      ],
+      "explanation": "Bảo vệ tài nguyên đòi hỏi các biện pháp khác nhau."
+    },
+    {
+      "id": "Q071",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép nơi chốn với thiên nhiên đặc trưng.",
+      "pairs": [
+        [
+          "Sahara",
+          "Hoang mạc khô hạn"
+        ],
+        [
+          "Congo",
+          "Rừng mưa xích đạo"
+        ],
+        [
+          "Xa van",
+          "Đồng cỏ nhiệt đới"
+        ]
+      ],
+      "explanation": "Mỗi vùng có nét thiên nhiên điển hình."
+    },
+    {
+      "id": "Q072",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối hướng với đại dương/biển của châu Phi.",
+      "pairs": [
+        [
+          "Phía tây",
+          "Đại Tây Dương"
+        ],
+        [
+          "Phía đông",
+          "Ấn Độ Dương"
+        ],
+        [
+          "Phía bắc",
+          "Địa Trung Hải"
+        ]
+      ],
+      "explanation": "Châu Phi được bao quanh bởi nhiều vùng biển và đại dương."
+    },
+    {
+      "id": "Q073",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối danh lam với con sông hoặc vị trí.",
+      "pairs": [
+        [
+          "Thác Victoria",
+          "Sông Zambezi"
+        ],
+        [
+          "Sông Nile",
+          "Ai Cập"
+        ],
+        [
+          "Hồ Tanganyika",
+          "Đông Phi"
+        ]
+      ],
+      "explanation": "Các địa danh trên giúp nhận diện châu Phi."
+    },
+    {
+      "id": "Q074",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối khái niệm địa lí với mô tả.",
+      "pairs": [
+        [
+          "Sơn nguyên",
+          "Địa hình cao tương đối bằng phẳng"
+        ],
+        [
+          "Hoang mạc",
+          "Mưa rất ít"
+        ],
+        [
+          "Đảo",
+          "Đất liền được nước bao quanh"
+        ]
+      ],
+      "explanation": "Nắm khái niệm địa lí cơ bản."
+    },
+    {
+      "id": "Q075",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép động vật với môi trường tiêu biểu.",
+      "pairs": [
+        [
+          "Sư tử",
+          "Xa van"
+        ],
+        [
+          "Khỉ đột",
+          "Rừng mưa vùng xích đạo"
+        ],
+        [
+          "Lạc đà",
+          "Khu vực khô hạn"
+        ]
+      ],
+      "explanation": "Các loài có những sinh cảnh điển hình khác nhau."
+    },
+    {
+      "id": "Q076",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối hình thức học tập với thao tác đúng.",
+      "pairs": [
+        [
+          "Trắc nghiệm",
+          "Chọn một đáp án"
+        ],
+        [
+          "Điền khuyết",
+          "Điền từ còn thiếu"
+        ],
+        [
+          "Nối cột",
+          "Ghép hai thông tin liên quan"
+        ]
+      ],
+      "explanation": "Đọc kỹ yêu cầu để thao tác chính xác."
+    },
+    {
+      "id": "Q077",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép tài nguyên với cách sử dụng bền vững.",
+      "pairs": [
+        [
+          "Rừng",
+          "Bảo vệ đa dạng sinh học"
+        ],
+        [
+          "Nước",
+          "Sử dụng tiết kiệm"
+        ],
+        [
+          "Đất",
+          "Chống thoái hóa, xói mòn"
+        ]
+      ],
+      "explanation": "Sử dụng tài nguyên thiên nhiên một cách hợp lí."
+    },
+    {
+      "id": "Q078",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối môi trường với đặc điểm lượng mưa.",
+      "pairs": [
+        [
+          "Rừng xích đạo",
+          "Mưa nhiều quanh năm"
+        ],
+        [
+          "Hoang mạc",
+          "Mưa rất ít"
+        ],
+        [
+          "Xa van",
+          "Mưa tập trung theo mùa"
+        ]
+      ],
+      "explanation": "Chế độ mưa là yếu tố phân biệt môi trường."
+    },
+    {
+      "id": "Q079",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Ghép địa điểm với loại cảnh quan.",
+      "pairs": [
+        [
+          "Namib",
+          "Hoang mạc ven biển"
+        ],
+        [
+          "Congo",
+          "Rừng mưa"
+        ],
+        [
+          "Hồ Victoria",
+          "Hồ nước ngọt"
+        ]
+      ],
+      "explanation": "Đặc trưng cảnh quan giúp nhận biết địa danh."
+    },
+    {
+      "id": "Q080",
+      "type": "match",
+      "difficulty": "vận dụng",
+      "question": "Nối thách thức môi trường với biện pháp phù hợp.",
+      "pairs": [
+        [
+          "Săn bắt trái phép",
+          "Tăng cường bảo tồn"
+        ],
+        [
+          "Chặt phá rừng",
+          "Trồng và bảo vệ rừng"
+        ],
+        [
+          "Ô nhiễm nước",
+          "Xử lí chất thải"
+        ]
+      ],
+      "explanation": "Các giải pháp góp phần bảo vệ môi trường tự nhiên."
+    }
+  ]
+}
