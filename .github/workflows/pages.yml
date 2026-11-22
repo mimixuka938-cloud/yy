@@ -30,8 +30,18 @@ jobs:
           set -euo pipefail
           GAME="docs/dai-chien-can-thu-chau-phi"
           test -f "$GAME/assets-chunk-001.bin"
+          # Keep versioned source files; the packed archive is used for media assets only.
+          mkdir -p "$RUNNER_TEMP/chauphi-source/data"
+          for file in index.html app.js style.css; do
+            cp "$GAME/$file" "$RUNNER_TEMP/chauphi-source/$file"
+          done
+          cp "$GAME/data/game-data.js" "$RUNNER_TEMP/chauphi-source/data/game-data.js"
           cat "$GAME"/assets-chunk-*.bin | tar -xz -C "$GAME"
           rm "$GAME"/assets-chunk-*.bin
+          for file in index.html app.js style.css; do
+            cp "$RUNNER_TEMP/chauphi-source/$file" "$GAME/$file"
+          done
+          cp "$RUNNER_TEMP/chauphi-source/data/game-data.js" "$GAME/data/game-data.js"
           test -f "$GAME/index.html"
           test -f "$GAME/app.js"
           test -f "$GAME/style.css"
